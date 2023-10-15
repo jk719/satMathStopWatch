@@ -53,3 +53,15 @@ function showDetails() {
     document.getElementById('details').innerHTML = details;
 }
 
+function toggleDetails() {
+    const detailsDiv = document.getElementById('details');
+    if (detailsDiv.style.display === "none") {
+        const details = elapsedTimePerQuestion.map((time, index) =>
+            `Question ${index + 1}: ${time.toFixed(1)} seconds`
+        ).join('<br>');
+        detailsDiv.innerHTML = details;
+        detailsDiv.style.display = "block";
+    } else {
+        detailsDiv.style.display = "none";
+    }
+}
