@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+#buttons button {
+  width: 50px; /* Fixed width */
+  height: 50px; /* Fixed height */
+  font-size: 20px;
+  border-radius: 50%;
+  border: none;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 50px; /* Adjusted line-height to match height */
+}
+
+#buttons button.active {
+  background-color: green;
+}
+
+@keyframes blink {
+  from {
+      background-color: black;  /* original color */
+      opacity: 1;
+  }
+  to {
+      background-color: green;  /* blink to green */
+      opacity: 0.5;
+  }
+}
+
+#details-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#details {
+  margin-top: 10px;
+}
+
+#time-display {
+  margin-top: 20px;
+  font-size: 24px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="buttons">
+        <script>
+            for (let i = 1; i <= 20; i++) {
+                document.write(`<button id="btn${i}" onclick="startStopwatch(${i})">${i}</button>`);
+            }
+        </script>
+    </div>
+    <button id="details-button" onclick="showDetails()">Show Details</button>
+    <div id="details"></div>
+    <div id="time-display">Elapsed Time: <span id="time">0.0</span> seconds</div>
+    <script src="script.js"></script>
+</body>
+</html>
