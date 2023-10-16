@@ -18,30 +18,20 @@ body {
 }
 
 #buttons button {
-  width: 50px; /* Fixed width */
-  height: 50px; /* Fixed height */
-  font-size: 20px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  background-color: #008CBA;
   border: none;
-  background-color: black;
   color: white;
-  text-align: center;
-  line-height: 50px; /* Adjusted line-height to match height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
 }
 
 #buttons button.active {
   background-color: green;
-}
-
-@keyframes blink {
-  from {
-      background-color: black;  /* original color */
-      opacity: 1;
-  }
-  to {
-      background-color: green;  /* blink to green */
-      opacity: 0.5;
-  }
 }
 
 #details-button {
@@ -58,3 +48,4 @@ body {
   margin-top: 20px;
   font-size: 24px;
 }
+
